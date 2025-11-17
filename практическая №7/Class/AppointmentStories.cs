@@ -6,84 +6,14 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace практическая__7
+namespace практическая__7.Class
 {
-    public class Patient : INotifyPropertyChanged
+    public class AppointmentStories : INotifyPropertyChanged
     {
-        private int _ID;
-        private string _Name = "";
-        private string _LastName = "";
-        private string _MiddleName = "";
-        private string _Birthday = "";
         private string _LastAppointment = "";
         private int _LastDoctor;
         private string _Diagnosis = "";
         private string _Recomendations = "";
-
-        public int ID
-        {
-            get => _ID;
-            set
-            {
-                if (_ID != value)
-                {
-                    _ID = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
-
-        public string Name
-        {
-            get => _Name;
-            set
-            {
-                if (_Name != value)
-                {
-                    _Name = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
-
-        public string LastName
-        {
-            get => _LastName;
-            set
-            {
-                if (_LastName != value)
-                {
-                    _LastName = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
-
-        public string MiddleName
-        {
-            get => _MiddleName;
-            set
-            {
-                if (_MiddleName != value)
-                {
-                    _MiddleName = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
-
-        public string Birthday
-        {
-            get => _Birthday;
-            set
-            {
-                if (_Birthday != value)
-                {
-                    _Birthday = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
 
         public string LastAppointment
         {
